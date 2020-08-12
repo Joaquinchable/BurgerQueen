@@ -108,7 +108,7 @@ class LunchDinnerPage extends Component {
 
         <WrappeOrder>
           <CustomerName>
-            <Lb htmlFor="exampleForm2">Nombre cliente :</Lb>
+            <Lb htmlFor="exampleForm2">Customer Name :</Lb>
             <Inp
               name="user"
               value={this.state.user}
@@ -143,7 +143,7 @@ class LunchDinnerPage extends Component {
           </WrapperItemT >
 
           <BtnSent type="button" onClick={this.handleOrder}>
-                  Enviar a cocina
+          Send to Kitchen
           </BtnSent>
         </WrappeOrder>
       </WrapperItems>

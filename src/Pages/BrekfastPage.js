@@ -87,7 +87,7 @@ class BrekfastPage extends Component {
 
         <WrappeOrder>
           <CustomerName>
-            <Lb htmlFor="exampleForm2"> Customer Name </Lb>
+            <Lb htmlFor="exampleForm2"> Customer Name :</Lb>
             <Inp
               name="user"
               value={this.state.user}
@@ -124,7 +124,7 @@ class BrekfastPage extends Component {
           <BtnSent 
           type="button" 
           onClick={this.handleOrder}>
-          Send to kitchen
+          Send to Kitchen
           </BtnSent>
         </WrappeOrder>
       </WrapperItems>
