@@ -1,5 +1,5 @@
 import React , { useEffect }  from "react";
-import { Formik, Field } from "formik";
+import { Formik, Field, } from "formik";
 import * as Yup from "yup";
 import { FormWrapper, StyledForm } from "./../Layout/index";
 import { connect} from 'react-redux'
@@ -62,40 +62,41 @@ const SignUpSchema = Yup.object().shape({
         {({ isSubmitting, isValid }) => (
           <FormWrapper>
             <Heading noMargin size="h1" color="white">
-              Sign up for an account
+              Sign Up 
+            </Heading>  <Heading noMargin size="h1" color="white">
+            Fill out the form well
             </Heading>
-            <Heading bold size="h4" color="white">
-              Fill in your details to register your new account
-            </Heading>
+          
+          
             <StyledForm>
               <Field
                 type="text"
                 name="firstName"
-                placeholder="Your first name..."
+                placeholder="First name"
                 component={Input}
               />
-              <Field
+             <Field
                 type="text"
                 name="lastName"
-                placeholder="Your last name..."
+                placeholder="Last name"
                 component={Input}
               />
               <Field
                 type="email"
                 name="email"
-                placeholder="Your email..."
+                placeholder="Your email"
                 component={Input}
               />
               <Field
                 type="password"
                 name="password"
-                placeholder="Your password..."
+                placeholder="Your password"
                 component={Input}
               />
               <Field
                 type="password"
                 name="confirmPassword"
-                placeholder="Re-type your password..."
+                placeholder="Re-type your password"
                 component={Input}
               />
               <Button

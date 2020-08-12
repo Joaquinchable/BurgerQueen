@@ -49,7 +49,7 @@ const Login = ({ login, loading, error, cleanUp }) => {
       {({ isSubmitting, isValid }) => (
         <FormWrapper>
           <Heading noMargin size="h1" color="white">
-            Login into your account
+            Login 
           </Heading>
           <Heading bold size="h4" color="white">
             Fill in your details to login into your account
@@ -59,13 +59,13 @@ const Login = ({ login, loading, error, cleanUp }) => {
             
               type="email"
               name="email"
-              placeholder="Your email..."
+              placeholder="email"
               component={Input}
             />
             <Field
               type="password"
               name="password"
-              placeholder="Your password..."
+              placeholder="password"
               component={Input}
             />
             <Button

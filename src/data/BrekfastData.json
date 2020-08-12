@@ -1,22 +1,26 @@
 {
   "Brekfast": [
     {
-      "price": 5,
-      "type": "Café americano"
+      "type": "American Coffee",
+      "price": 5
+      
     },
 
     {
-      "price": 7,
-      "type": "Café con leche"
+      "type": "Latte Coffee",
+      "price": 7
+     
     },
 
     {
-      "price": 10,
-      "type": "Sandwich"
+      "type": "Ham and cheese sandwich",
+      "price": 10
+     
     },
     {
-      "price": 7,
-      "type": "Jugo natural"
+      "type": "Natural juice",
+      "price": 7
+      
     }
   ]
 }

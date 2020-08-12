@@ -21,6 +21,7 @@ export const FormWrapper = styled.div`
   align-items: center;
   background-color: var(--color-mainDark);
   box-shadow: 0rem 0.5rem 3.5rem var(--shadow);
+ 
 `;
 
 export const StyledForm = styled(Form)`
@@ -28,6 +29,8 @@ export const StyledForm = styled(Form)`
   align-items: center;
   width: 100%;
   flex-direction: column;
+
+
 `;
 
 export const Frag = styled.div`

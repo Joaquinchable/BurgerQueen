@@ -21,14 +21,6 @@ import {
 
 
 
-//   import firebase from "firebase";
-//   const firestore = firebase.firestore();
-
-//    const settings = { /* your settings... */ timestampsInSnapshots: true };
-//   firestore.settings(settings);
-//     const db = firebase.firestore();
-
-// library.add(faPlusSquare, faTrashAlt, faPaperPlane);
 
 class BrekfastPage extends Component {
   constructor() {
@@ -61,20 +53,7 @@ class BrekfastPage extends Component {
     });
   };
 
-  //   handleOrder = () => {
-  //     // db.collection("order")
-  //     //   .add({
-  //     //     user: this.state.user,
-  //     //     operations: this.state.operations
-  //     //   })
-  //       .then(function(docRef) {
-  //         console.log("Document written with ID: ", docRef.id);
-  //         console.log("created order");
-  //       })
-  //       .catch(function(error) {
-  //         console.error("Error adding document: ", error);
-  //       });
-  //   };
+ 
 
   handleChange = e => {
     const { value, name } = e.target;
@@ -108,7 +87,7 @@ class BrekfastPage extends Component {
 
         <WrappeOrder>
           <CustomerName>
-            <Lb htmlFor="exampleForm2">Nombre cliente :</Lb>
+            <Lb htmlFor="exampleForm2"> Customer Name </Lb>
             <Inp
               name="user"
               value={this.state.user}
@@ -145,7 +124,7 @@ class BrekfastPage extends Component {
           <BtnSent 
           type="button" 
           onClick={this.handleOrder}>
-          Enviar a cocina
+          Send to kitchen
           </BtnSent>
         </WrappeOrder>
       </WrapperItems>

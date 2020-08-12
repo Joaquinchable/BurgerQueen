@@ -40,6 +40,7 @@ const Error = styled.div`
   padding: 0rem 2rem;
   font-weight: 500;
   font-size: 1.2rem;
+ 
 `;
 
 const Input = ({ field, form: { touched, errors }, ...props }) => {
