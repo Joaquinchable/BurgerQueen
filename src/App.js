@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+import Login from './auth/Login'
+import SignUp from "./auth/Signup";
+import Layout from "./Layout/Layout";
+import Logout from "./auth/Logout";
+import Brekfast from './Pages/BrekfastPage'
+import LunchDinner from './Pages/LunchDinnerPage'
+import { connect } from 'react-redux';
+
+
+const App = ({loggedIn}) => {
+
+  console.log(loggedIn);
+  let routes;
+if (loggedIn) {
+    routes = (
+      <Switch>
+        <Route exact path="/brekfast" component={Brekfast} />
+        <Route exact path="/lunchdiner" component={LunchDinner} />
+        <Route exact path="/logout" component={Logout} />
+        <Redirect to="/brekfast" />
+      </Switch>
+    );
+  } else {
+    routes = (
+      <Switch>
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={SignUp} />
+        <Redirect to="/login" />
+      </Switch>
+    );
+  }
+
+  return <Layout>{routes}</Layout>;
+};
+
+const mapStateToProps = ({ firebase }) => ({
+  loggedIn: firebase.auth.uid ? true : null,
+});
+
+export default connect(mapStateToProps)(App);
