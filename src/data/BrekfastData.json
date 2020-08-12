@@ -1,0 +1,22 @@
+{
+  "Brekfast": [
+    {
+      "price": 5,
+      "type": "Café americano"
+    },
+
+    {
+      "price": 7,
+      "type": "Café con leche"
+    },
+
+    {
+      "price": 10,
+      "type": "Sandwich"
+    },
+    {
+      "price": 7,
+      "type": "Jugo natural"
+    }
+  ]
+}

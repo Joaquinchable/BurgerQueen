@@ -1,0 +1,87 @@
+{
+  "LunchAndDinner": [
+    {
+      "type": "Vegee Burger",
+      "price": 10
+      
+    },
+
+    {
+      "type": "Sp Chicken Burger",
+      "price": 10
+      
+    },
+    {
+      "type": "Db Chicken Burger",
+      "price": 15
+      
+    },
+
+    {
+      "type": "Sp Beef Burger",
+      "price": 10
+      
+    },
+    {
+      "type": "Db Beef Burger ",
+      "price": 15
+      
+    },
+
+     {
+       "type":"Burger Q Combo",
+       "price":20
+
+     },
+
+     {
+      "type": "French Fries",
+      "price": 5
+      
+    },
+    {
+      "type": "Onion Rings",
+      "price": 5
+      
+    },
+    { 
+      "type": "Water Bottle 500ml",
+      "price": 5
+      
+    },
+    {
+      "type": "Water Bottle 750ml",
+      "price": 7
+      
+    },
+
+    {
+      "type": "Soda 500ml",
+      "price": 5
+      
+    },
+    { 
+      "type": "Soda 750ml",
+      "price": 10
+      
+    },
+
+
+
+    {
+      "type": "Extra Cheese",
+      "price": 1
+      
+    },
+
+    { 
+      "type": "Extra Egg",
+      "price": 1
+      
+    }
+
+
+
+
+  ]
+}
