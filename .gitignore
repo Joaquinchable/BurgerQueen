@@ -10,7 +10,7 @@
 
 # production
 /build
-/.firebase
+
 
 
 # misc
@@ -21,6 +21,7 @@
 .env.production.local
 .firebaserc
 .firebase.json
+.firebase
 
 npm-debug.log*
 yarn-debug.log*
