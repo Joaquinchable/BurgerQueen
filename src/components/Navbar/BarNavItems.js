@@ -21,7 +21,7 @@ const BarNavItems = ({ mobile, clicked, loggedIn }) => {
     links = (
       <Ul mobile={mobile}>
         <BarNavItem mobile={mobile} clicked={clicked} link="">
-          Brekfast
+          Breakfast
         </BarNavItem>
 
         <BarNavItem mobile={mobile} clicked={clicked} link="/lunchdiner">

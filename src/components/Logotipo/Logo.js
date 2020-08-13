@@ -12,7 +12,7 @@ const LogoWrapper = styled.div`
 `;
 
 const Logo = () => {
-  return <LogoWrapper>Burguer Queen</LogoWrapper>;
+  return <LogoWrapper>Burger Queen</LogoWrapper>;
 };
 
 export default Logo;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import data from "./../data/BrekfastData";
+import data from "./../data/BreakfastData";
 import {
   WrapperItems,
   WrapperItem,
@@ -68,7 +68,7 @@ class BrekfastPage extends Component {
 
 
       <WrapperBtn>
-      {data.Brekfast.map((item, i) => (
+      {data.Breakfast.map((item, i) => (
         <Btn
           key={i}
           id={i}

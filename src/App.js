@@ -6,7 +6,7 @@ import Login from './auth/Login'
 import SignUp from "./auth/Signup";
 import Layout from "./Layout/Layout";
 import Logout from "./auth/Logout";
-import Brekfast from './Pages/BrekfastPage'
+import Breakfast from './Pages/BreakfastPage'
 import LunchDinner from './Pages/LunchDinnerPage'
 import { connect } from 'react-redux';
 
@@ -18,10 +18,10 @@ const App = ({loggedIn}) => {
 if (loggedIn) {
     routes = (
       <Switch>
-        <Route exact path="/brekfast" component={Brekfast} />
+        <Route exact path="/breakfast" component={Breakfast} />
         <Route exact path="/lunchdiner" component={LunchDinner} />
         <Route exact path="/logout" component={Logout} />
-        <Redirect to="/brekfast" />
+        <Redirect to="/breakfast" />
       </Switch>
     );
   } else {
